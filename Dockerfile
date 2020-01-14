@@ -7,6 +7,7 @@ ENV APP_HOME /app
 RUN mkdir $APP_HOME
 WORKDIR $APP_HOME
 
+RUN gem install bundler:2.1.2
 ADD Gemfile* $APP_HOME/
 RUN bundle install
 
