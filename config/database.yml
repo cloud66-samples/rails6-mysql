@@ -49,6 +49,8 @@ test:
 #
 production:
   <<: *default
-  database: rails6_mysql_production
-  username: rails6_mysql
-  password: <%= ENV['RAILS6_MYSQL_DATABASE_PASSWORD'] %>
+  database: <%= ENV['MYSQL_DATABASE'] %>
+  username: <%= ENV['MYSQL_USERNAME'] %>
+  password: <%= ENV['MYSQL_PASSWORD'] %>
+  host: <%= ENV['MYSQL_ADDRESS'] || ENV['MYSQL_HOST'] %>
+
