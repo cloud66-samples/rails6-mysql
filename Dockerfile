@@ -12,4 +12,4 @@ ADD Gemfile* $APP_HOME/
 RUN bundle install
 
 ADD . $APP_HOME
-RUN RAILS_ENV=production rails assets:precompile
+RUN RAILS_ENV=production bundle exec rails assets:precompile
