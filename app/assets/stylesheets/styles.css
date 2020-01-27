@@ -1,0 +1,23 @@
+body {
+    background-color: #718096;
+}
+.wrapper {
+    overflow: hidden;
+}
+.items {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: table;
+    margin: 0 auto;
+}
+.dog {
+    float:left;
+}
+.title {
+    margin-left: 20px;
+    font-family: 'Bangers', cursive;
+    color: white;
+    font-size: 45px;
+    float:left;
+}
