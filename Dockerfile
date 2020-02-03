@@ -17,4 +17,4 @@ RUN bundle install
 ADD . $APP_HOME
 RUN yarn install --check-files
 CMD ["rails","server","-b","0.0.0.0"]
-RUN RAILS_ENV=production RAILS_MASTER_KEY=$RAILS_MASTER_KEY bundle exec rake assets:precompile
+RUN RAILS_ENV=production SECRET_KEY_BASE=$SECRET_KEY_BASE bundle exec rake assets:precompile
